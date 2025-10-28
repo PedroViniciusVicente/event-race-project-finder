@@ -1,6 +1,8 @@
 # GITHUB-API-SCRAPER
 Ferramenta que utiliza a API do GitHub para auxiliar na procura por Event Races em projetos open-source JavaScript com base nas palavras chave presentes de issues fechadas em seus repositorios. 
 
+Teste update README
+
 ## Passo a passo da instalação e execução do GITHUB-API-SCRAPER
 
 ### Ambiente Virtual
