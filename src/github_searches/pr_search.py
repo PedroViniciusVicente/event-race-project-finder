@@ -10,11 +10,25 @@ from urllib3.util.retry import Retry
 from requests.exceptions import RequestException, ConnectionError, Timeout
 import logging
 
-from config.filters import (
-    LANGUAGES,
-    PR_DESCRIPTION_TERMS,
-    TEST_FILE_PATTERNS
-)
+
+LANGUAGES = [
+    "javascript",
+    # 'typescript',
+]
+
+PR_DESCRIPTION_TERMS = [
+    "race condition",
+    "event race",
+    "concurrency bug",
+    "flaky test",
+    "race bug",
+]
+
+TEST_FILE_PATTERNS = [
+    ".test.", ".spec.", "_test.", "_spec.", 
+    "/test/", "/tests/", "__tests__", 
+    "test.", "spec."  # files starting with test/spec
+]
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -183,8 +197,8 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
         'errors': 0
     }
     
-    start_date = datetime(2020, 1, 1)
-    end_date = datetime(2025, 5, 1)
+    start_date = datetime(2019, 1, 1)
+    end_date = datetime(2020, 1, 1)
     delta_days = 7  # Can be increased to 30 for fewer API calls
     
     checkpoint_file = "data_repos/checkpoint.json"
