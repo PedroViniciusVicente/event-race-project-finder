@@ -32,9 +32,9 @@ We have already included the [final, filtered Pull Requests dataset](filtered_ev
 
 1. The initial list of JavaScript projects was sourced from the curated lists detailed in the [awesome nodejs lists](awesome_lists/README.md).
 
-2. A broad search of Pull Requests in JavaScript projects was conducted by searchs using the GitHub API in [pr_search.py](src/github_searches/pr_search.py).
+2. A broad search of Pull Requests in JavaScript projects was conducted by searchs using the GitHub API in [pr_search.py](github_searches/pr_search.py).
 
-3. The [filter_search.py](src/github_searches/filter_search.py) script was used to filter all the collected data, filtering for PRs that match our criteria (mention keywords: "event race", "race condition", "concurrency bug", "race bug", "flaky test"; modify test files with keywords: "test", "it", "describe"; and modify JavaScript files with modern resources: "promises", "async", "await").
+3. The [filter_search.py](github_searches/filter_search.py) script was used to filter all the collected data, filtering for PRs that match our criteria (mention keywords: "event race", "race condition", "concurrency bug", "race bug", "flaky test"; modify test files with keywords: "test", "it", "describe"; and modify JavaScript files with modern resources: "promises", "async", "await").
 
 
 ### Flaky Tests Reproduction
