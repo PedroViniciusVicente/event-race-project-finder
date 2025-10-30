@@ -27,10 +27,9 @@ PR_DESCRIPTION_TERMS = [
 TEST_FILE_PATTERNS = [
     ".test.", ".spec.", "_test.", "_spec.", 
     "/test/", "/tests/", "__tests__", 
-    "test.", "spec."  # files starting with test/spec
+    "test.", "spec."
 ]
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_next_page_url(response):
@@ -44,7 +43,7 @@ def is_js_file(filename):
     return filename.lower().endswith(('.js', '.jsx', '.ts', '.tsx'))
 
 def is_test_file(filename):
-    """Check if filename indicates it's a test file"""
+
     filename_lower = filename.lower()
     return any(pattern in filename_lower for pattern in TEST_FILE_PATTERNS)
 
@@ -54,14 +53,14 @@ def daterange(start_date, end_date, delta_days):
         start_date += timedelta(days=delta_days)
 
 def create_session_with_retries():
-    """Create a requests session with retry strategy"""
+
     session = requests.Session()
     
     retry_strategy = Retry(
-        total=5,  # Total number of retries
-        backoff_factor=2,  # Wait time between retries (exponential backoff)
-        status_forcelist=[429, 500, 502, 503, 504],  # HTTP status codes to retry
-        allowed_methods=["HEAD", "GET", "OPTIONS"]  # Only retry safe methods
+        total=5, 
+        backoff_factor=2,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["HEAD", "GET", "OPTIONS"]
     )
     
     adapter = HTTPAdapter(max_retries=retry_strategy)
@@ -71,12 +70,11 @@ def create_session_with_retries():
     return session
 
 def safe_api_request(session, url, headers, max_retries=3, base_delay=1):
-    """Make API request with robust error handling and retries"""
+
     for attempt in range(max_retries):
         try:
             response = session.get(url, headers=headers, timeout=30)
             
-            # Handle rate limiting
             if response.status_code == 403 and 'X-RateLimit-Remaining' in response.headers:
                 remaining = int(response.headers['X-RateLimit-Remaining'])
                 if remaining == 0:
@@ -90,7 +88,7 @@ def safe_api_request(session, url, headers, max_retries=3, base_delay=1):
             return response
             
         except (ConnectionError, Timeout, RequestException) as e:
-            wait_time = base_delay * (2 ** attempt)  # Exponential backoff
+            wait_time = base_delay * (2 ** attempt)
             print(f"⚠️ Network error on attempt {attempt + 1}/{max_retries}: {str(e)}")
             
             if attempt < max_retries - 1:
@@ -103,7 +101,7 @@ def safe_api_request(session, url, headers, max_retries=3, base_delay=1):
     return None
 
 def fetch_pr_files(pr_api_url, session, headers):
-    """Fetch PR files with robust error handling"""
+
     files_url = f"{pr_api_url}/files"
     
     try:
@@ -114,7 +112,6 @@ def fetch_pr_files(pr_api_url, session, headers):
         
         files_data = files_response.json()
         
-        # Filter for JavaScript test files
         js_test_files = [
             f['filename'] for f in files_data 
             if is_js_file(f['filename']) and is_test_file(f['filename'])
@@ -127,12 +124,11 @@ def fetch_pr_files(pr_api_url, session, headers):
         return []
 
 def process_pr(pr, session, headers):
-    """Process individual PR to check if it matches criteria"""
+
     try:
         title = pr["title"].lower()
         body = (pr.get('body', '') or '').lower()
         
-        # Check if PR has any of the target terms
         matching_terms = [
             term for term in PR_DESCRIPTION_TERMS 
             if term.lower() in title or term.lower() in body
@@ -141,7 +137,6 @@ def process_pr(pr, session, headers):
         if not matching_terms:
             return None
         
-        # Get PR details
         pr_api_url = pr['url'].replace('issues', 'pulls')
         pr_response = safe_api_request(session, pr_api_url, headers)
         
@@ -150,7 +145,6 @@ def process_pr(pr, session, headers):
         
         pr_data = pr_response.json()
         
-        # Check for JavaScript test files
         js_test_files = fetch_pr_files(pr_api_url, session, headers)
         
         if not js_test_files:
@@ -174,20 +168,12 @@ def process_pr(pr, session, headers):
         return None
 
 def search_github_prs(headers, max_workers=5, save_checkpoint=True):
-    """
-    Search GitHub PRs with robust error handling and recovery:
-    - Network error recovery with retries
-    - Connection pooling and session reuse
-    - Checkpoint saving for recovery
-    - Better error handling and logging
-    """
+
     collected_prs = []
     seen_pr_urls = set()
     
-    # Create session with retry strategy
     session = create_session_with_retries()
     
-    # Statistics
     stats = {
         'total_found': 0,
         'processed': 0,
@@ -197,13 +183,13 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
         'errors': 0
     }
     
+    # DATE RANGE
     start_date = datetime(2019, 1, 1)
-    end_date = datetime(2020, 1, 1)
-    delta_days = 7  # Can be increased to 30 for fewer API calls
+    end_date = datetime(2025, 5, 1)
+    delta_days = 7
     
     checkpoint_file = "data_repos/checkpoint.json"
     
-    # Load checkpoint if exists
     try:
         with open(checkpoint_file, 'r') as f:
             checkpoint = json.load(f)
@@ -218,7 +204,6 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
         for lang in LANGUAGES:
             print(f"\n🔎 Searching PRs in {lang} projects...\n")
             
-            # Build search query
             quoted_phrases = [f'"{phrase}"' for phrase in PR_DESCRIPTION_TERMS]
             search_terms_query = " OR ".join(quoted_phrases)
             
@@ -252,7 +237,6 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
                             stats['total_found'] += total_in_period
                             print(f"📊 Found {total_in_period} PRs in this period")
                         
-                        # Process PRs
                         for pr in results.get('items', []):
                             if pr['html_url'] in seen_pr_urls:
                                 continue
@@ -262,7 +246,6 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
                             if stats['processed'] % 50 == 0:
                                 print(f"⚡ Processed {stats['processed']} PRs so far...")
                                 
-                                # Save checkpoint every 50 PRs
                                 if save_checkpoint:
                                     save_checkpoint_data(checkpoint_file, collected_prs, seen_pr_urls, stats)
                             
@@ -282,17 +265,16 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
                                     print(f"   📁 Test files: {processed_pr['js_test_files'][:3]}{'...' if len(processed_pr['js_test_files']) > 3 else ''}")
                                     print(f"   🏷️ Terms: {processed_pr['matched_terms']}")
                             
-                            # Small delay to be respectful to API
                             time.sleep(0.2)
                         
                         url = get_next_page_url(response)
                         page += 1
-                        time.sleep(2)  # Increased delay between pages
+                        time.sleep(2)
                     
                     except Exception as e:
                         print(f"❌ Error processing page {page}: {str(e)}")
                         stats['errors'] += 1
-                        time.sleep(5)  # Wait longer after errors
+                        time.sleep(5)
                         break
     
     except KeyboardInterrupt:
@@ -301,10 +283,8 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
         print(f"\n❌ Unexpected error: {str(e)}")
         stats['errors'] += 1
     finally:
-        # Always save final results
         save_final_results(collected_prs, stats)
         
-        # Clean up checkpoint file
         try:
             import os
             os.remove(checkpoint_file)
@@ -314,7 +294,7 @@ def search_github_prs(headers, max_workers=5, save_checkpoint=True):
     return collected_prs
 
 def save_checkpoint_data(checkpoint_file, collected_prs, seen_pr_urls, stats):
-    """Save checkpoint data for recovery"""
+
     try:
         checkpoint_data = {
             'collected_prs': collected_prs,
@@ -328,8 +308,7 @@ def save_checkpoint_data(checkpoint_file, collected_prs, seen_pr_urls, stats):
         print(f"⚠️ Failed to save checkpoint: {str(e)}")
 
 def save_final_results(collected_prs, stats):
-    """Save final results with statistics"""
-    # Print final statistics
+
     print("\n" + "="*60)
     print("📊 FINAL STATISTICS")
     print("="*60)
@@ -341,7 +320,6 @@ def save_final_results(collected_prs, stats):
     print(f"Errors encountered: {stats['errors']}")
     print(f"Success rate: {(stats['matching_all_criteria']/max(stats['processed'], 1)*100):.2f}%")
     
-    # Save results
     output_file = "data_repos/race_condition_prs.json"
     try:
         with open(output_file, "w", encoding="utf-8") as f:
@@ -350,7 +328,7 @@ def save_final_results(collected_prs, stats):
                     "search_date": datetime.now().isoformat(),
                     "total_prs_collected": len(collected_prs),
                     "search_criteria": {
-                        "date_range": "2020-01-01 to 2024-12-31",
+                        "date_range": "2019-01-01 to 2025-05-01",
                         "terms": PR_DESCRIPTION_TERMS,
                         "languages": LANGUAGES,
                         "test_file_patterns": TEST_FILE_PATTERNS
@@ -365,7 +343,6 @@ def save_final_results(collected_prs, stats):
         
     except Exception as e:
         print(f"❌ Error saving results: {str(e)}")
-        # Try to save with simpler format
         try:
             backup_file = "data_repos/race_condition_prs_backup.json"
             with open(backup_file, "w", encoding="utf-8") as f:
