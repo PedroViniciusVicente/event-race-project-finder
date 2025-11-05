@@ -1,8 +1,8 @@
-# Awating Trouble: Source Code and Artifacts Repository
+# Awaiting Trouble: Source Code and Artifacts Repository
 
 This repository contains the source code and artifacts needed to replicate the experiments presented in the paper "Awaiting Trouble: An Preliminary Study on Event Races and Flaky Tests in Modern JavaScript Applications", submitted to [ICSE's 3rd International Flaky Tests Workshop 2026 (FTW 2026)](https://conf.researchr.org/home/icse-2026/ftw-2026).
 
-In this repository, JavaScript projects containing event races, a special form of race condition, were searched, filtered and analaysed using Pull Requests (PRs) collected from the GitHub API. The 20 analyzed projects described in the shortpaper were also classified according to its caracteristics and reproduced following a protocol to reveal flaky tests.
+In this repository, JavaScript projects containing event races, a special form of race condition, were searched, filtered and analyzed using Pull Requests (PRs) collected from the GitHub API. The 20 analyzed projects described in the shortpaper were also classified according to its characteristics and reproduced following a protocol to reveal flaky tests.
 
 
 ## Prerequisites
@@ -30,11 +30,11 @@ This section provides a step-by-step guide to replicate our study.
 
 We have already included the [final, filtered Pull Requests dataset](filtered_event_races_pull_requests.csv) in this repository. However, if you wish to re-run the entire data collection and filtering process, follow these steps.
 
-1. The initial list of JavaScript projects was sourced from the curated lists detailed in the [awesome nodejs lists](awesome_lists/README.md).
+1. The initial list of JavaScript projects is sourced from the curated lists detailed in the [awesome nodejs lists](awesome_lists/README.md).
 
-2. A broad search of Pull Requests in JavaScript projects was conducted by searchs using the GitHub API in [pr_search.py](github_searches/pr_search.py).
+2. A broad search of Pull Requests in JavaScript projects is conducted by searchs using the GitHub API in [pr_search.py](github_searches/pr_search.py).
 
-3. The [filter_search.py](github_searches/filter_search.py) script was used to filter all the collected data, filtering for PRs that match our criteria (mention keywords: "event race", "race condition", "concurrency bug", "race bug", "flaky test"; modify test files with keywords: "test", "it", "describe"; and modify JavaScript files with modern resources: "promises", "async", "await").
+3. The [filter_search.py](github_searches/filter_search.py) script is used to filter all the collected data, filtering for PRs that match our criteria (mention keywords: "event race", "race condition", "concurrency bug", "race bug", "flaky test"; modify test files with keywords: "test", "it", "describe"; and modify JavaScript files with modern resources: "promises", "async", "await").
 
 
 ### Flaky Tests Reproduction
@@ -44,5 +44,7 @@ Our analysis resulted in a dataset of 20 curated bugs that were manually analyze
 - The projects pre-fix commit, are available as compacted archives in our Google Drive folder: 
 [Compacted Projects](https://drive.google.com/drive/folders/1X4r3UzZLAkntMeO5bltF-uxXzP-9v28V?usp=sharing).
 
-- For each project, we have created a step-by-step guide detailing the setup, the exact commands used to run, and the logs of the flaky behavior:
+- For each project, we have created a step-by-step guide detailing the setup, containing the commands used to run, the required Node.js version and the logs of the flaky behavior:
 [Projects Setup and Flakiness Logs](https://drive.google.com/drive/folders/1JgY6P6Uz4JqIeuQgYF6njTuTbQQvWXA1?usp=drive_link).
+
+- To automate the flaky test reproduction protocol, we provide a Python script detailed in [run_tests.py](tests_execution/run_tests.py). The script is used to run the analyzed test multiple times to observe intermittent failures and automatically generate the results logs available in our Google Drive Folders. This is the same tool we used to produce the analysis logs available on Google Drive and to gather the data for Table 1 in our paper.

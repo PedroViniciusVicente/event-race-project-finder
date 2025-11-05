@@ -6,4 +6,4 @@ This folder contains the data files in different stages of its collection.
 
 - *filtered_race_condition_prs.json* contains the PRs filtered using [filter_search.py](../github_searches/filter_search.py).
 
-- *filtered_csv_.csv* contains the filtered PRs converted to a .csv file using [transform_csv.py](transform_csv.py).
+- *filtered_csv.csv* contains the filtered PRs converted to a .csv file using [transform_csv.py](transform_csv.py).
