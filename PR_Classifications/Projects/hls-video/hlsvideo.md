@@ -1,4 +1,17 @@
+# hls-video-element
 PR URL: https://github.com/muxinc/hls-video-element/pull/32
+
+## Pull Request Title and Description
+![PR Title and Description](image1.png)
+
+## Pull Request Code
+![PR Code](image2.png)
+
+## Our Pattern Classification
+Stabilization Race:
+
+## Wang Pattern Classification
+Order Violation:
 
 ## Setup
 ```

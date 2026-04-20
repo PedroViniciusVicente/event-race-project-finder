@@ -1,4 +1,17 @@
+# Milo
 PR: https://github.com/skholkhojaev/milo/pull/1
+
+## Pull Request Title and Description
+![PR Title and Description](image1.png)
+
+## Pull Request Code
+![PR Code](image2.png)
+
+## Our Pattern Classification
+Stabilization Race:
+
+## Wang Pattern Classification
+Order Violation:
 
 the PR above was merged into a test branch, the merge in the used branch (stage) was made here: https://github.com/skholkhojaev/milo/commit/b1351a6df6de10659dad4dba7bb4a9ade8e5b838
 

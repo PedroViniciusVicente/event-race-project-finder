@@ -1,4 +1,17 @@
+# Rxjs
 PR URL: https://github.com/ReactiveX/rxjs/pull/7005
+
+## Pull Request Title and Description
+![PR Title and Description](image1.png)
+
+## Pull Request Code
+![PR Code](image2.png)
+
+## Our Pattern Classification
+Stabilization Race:
+
+## Wang Pattern Classification
+Order Violation:
 
 ## Setup
 ```
