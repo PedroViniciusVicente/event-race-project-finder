@@ -1,0 +1,1864 @@
+=== Log de Testes 441 a 460 ===
+
+
+=== Teste #441 - 2025-08-14 13:29:11 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:08.268:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:08.292:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:08.292:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:08.295:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:08.578:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket -ye32UN3FDkk0GmkAAAA with id 31218617
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.033 secs / 0.015 secs @ 13:29:10 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #442 - 2025-08-14 13:29:14 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:11.684:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:11.709:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:11.709:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:11.712:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:12.018:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket NrWANCJ24dH390TLAAAA with id 54797868
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.027 secs / 0.012 secs @ 13:29:14 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #443 - 2025-08-14 13:29:17 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:15.091:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:15.116:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:15.116:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:15.119:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:15.392:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket j0z-RwNyOyeaLNFXAAAA with id 67935880
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.033 secs / 0.013 secs @ 13:29:17 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #444 - 2025-08-14 13:29:21 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:18.453:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:18.478:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:18.479:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:18.481:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:18.770:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket VNl-bfAR2zeB7MOnAAAA with id 23466300
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.027 secs / 0.011 secs @ 13:29:21 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #445 - 2025-08-14 13:29:24 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:21.910:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:21.938:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:21.938:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:21.941:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:22.234:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket _S-sHsVOvGNJ3fhFAAAA with id 42929084
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.029 secs / 0.011 secs @ 13:29:24 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #446 - 2025-08-14 13:29:28 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:25.413:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:25.439:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:25.439:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:25.442:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:25.740:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket _OYnqQgjfqJ3FD-bAAAA with id 6766712
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.033 secs / 0.013 secs @ 13:29:28 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #447 - 2025-08-14 13:29:31 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:28.847:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:28.872:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:28.872:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:28.875:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:29.168:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket D8--xGoi1hWFGw3dAAAA with id 18627303
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.033 secs / 0.012 secs @ 13:29:31 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #448 - 2025-08-14 13:29:35 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:32.327:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:32.351:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:32.352:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:32.354:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:32.647:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket PCShB-yPdhy-H9biAAAA with id 52589352
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.025 secs / 0.013 secs @ 13:29:35 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #449 - 2025-08-14 13:29:38 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:35.890:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:35.914:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:35.914:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:35.917:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:36.201:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket Ig-c1S8X7r4xBnzFAAAA with id 91848195
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.027 secs / 0.012 secs @ 13:29:38 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #450 - 2025-08-14 13:29:42 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:39.438:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:39.462:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:39.462:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:39.465:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:39.762:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket ZFx7AqHW52ei07kLAAAA with id 10869593
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.026 secs / 0.013 secs @ 13:29:42 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #451 - 2025-08-14 13:29:45 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:42.937:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:42.964:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:42.964:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:42.967:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:43.268:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket nSDnY2-CTdDbO_U_AAAA with id 17694820
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.03 secs / 0.014 secs @ 13:29:45 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #452 - 2025-08-14 13:29:49 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:46.459:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:46.484:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:46.484:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:46.487:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:46.771:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket 92CWg-xcvQ-i3VFZAAAA with id 78910578
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.034 secs / 0.013 secs @ 13:29:49 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #453 - 2025-08-14 13:29:52 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:49.949:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:49.975:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:49.975:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:49.978:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:50.290:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket nNMQIuuNah5A-puYAAAA with id 42842134
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.027 secs / 0.013 secs @ 13:29:52 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #454 - 2025-08-14 13:29:56 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:53.438:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:53.464:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:53.465:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:53.467:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:53.762:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket ckUdTMqxCExWtCskAAAA with id 34438697
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.025 secs / 0.015 secs @ 13:29:56 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #455 - 2025-08-14 13:29:59 - PASSOU ===
+
+START:
+[33m14 08 2025 13:29:56.940:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:29:56.964:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:29:56.964:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:29:56.967:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:29:57.240:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket qG3Gy1jWNMPxLmSfAAAA with id 59060274
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.031 secs / 0.012 secs @ 13:29:59 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #456 - 2025-08-14 13:30:03 - PASSOU ===
+
+START:
+[33m14 08 2025 13:30:00.366:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:30:00.392:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:30:00.392:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:30:00.395:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:30:00.695:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket G2jhe5oE7YfZ4IbUAAAA with id 95412906
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.028 secs / 0.012 secs @ 13:30:03 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #457 - 2025-08-14 13:30:06 - PASSOU ===
+
+START:
+[33m14 08 2025 13:30:03.772:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:30:03.798:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:30:03.798:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:30:03.801:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:30:04.090:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket fkvrgP7AklW4_s1BAAAA with id 6972823
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.03 secs / 0.012 secs @ 13:30:06 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #458 - 2025-08-14 13:30:10 - PASSOU ===
+
+START:
+[33m14 08 2025 13:30:07.257:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:30:07.282:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:30:07.282:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:30:07.285:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:30:07.579:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket PN4s8_iQYF9MALChAAAA with id 94701375
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.027 secs / 0.013 secs @ 13:30:09 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #459 - 2025-08-14 13:30:13 - PASSOU ===
+
+START:
+[33m14 08 2025 13:30:10.679:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:30:10.703:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:30:10.704:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:30:10.706:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:30:10.998:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket CIKGX6BowzrtUrYcAAAA with id 63344997
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.023 secs / 0.014 secs @ 13:30:13 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #460 - 2025-08-14 13:30:16 - PASSOU ===
+
+START:
+[33m14 08 2025 13:30:14.049:WARN [filelist]: [39mPattern "/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/core/__snapshots__/**/*.md" does not match any file.
+[32m14 08 2025 13:30:14.073:INFO [karma-server]: [39mKarma v5.2.3 server started at http://localhost:9876/
+[32m14 08 2025 13:30:14.073:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m14 08 2025 13:30:14.076:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m14 08 2025 13:30:14.370:INFO [Chrome Headless 139.0.0.0 (Linux x86_64)]: [39mConnected on socket nAh4whS_qgNYuk1uAAAA with id 39208677
+  d2l-input-date-time-range
+    utility
+      getShiftedEndDateTime in America/Toronto
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in America/Toronto with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in America/Toronto with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla
+        ✔ should return correctly forward shifted end date when localized without Z
+        ✔ should shift as expected when times are different but dates the same because of UTC
+        ✔ should not shift if start and end dates are different because of UTC time
+      getShiftedEndDateTime in Australia/Eucla with localized true
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+      getShiftedEndDateTime in Australia/Eucla with localized false
+        date change
+          ✔ should return correctly forward shifted end date
+          ✔ should return correctly backward shifted end date
+          ✔ should return correctly shifted end date when initial dates were equal
+          ✔ should return initial end date if prev start value was after end date
+          ✔ should return initial end date if not inclusive and prev start value was equal to end date
+          ✔ should return correctly shifted end date if inclusive and prev start value was equal to end date
+        time change
+          ✔ should not shift if start and end dates are different
+          ✔ should shift forward as expected when times are different but dates the same
+          ✔ should shift backward as expected when times are different but dates the same
+          ✔ should not shift when previously same and not inclusive
+          ✔ should shift as expected when previously same and inclusive
+          ✔ should only shift at latest to 11:59 PM
+
+Finished in 0.033 secs / 0.014 secs @ 13:30:16 GMT-0300 (Brasilia Standard Time)
+
+SUMMARY:
+✔ 54 tests completed
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Código de retorno: 0
+
+================================================================================
+
+=== Fim do Log ===

@@ -1,0 +1,324 @@
+=== Log de Testes 841 a 860 ===
+
+
+=== Teste #841 - 2025-08-12 22:45:58 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.529 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #842 - 2025-08-12 22:46:00 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.515 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #843 - 2025-08-12 22:46:02 - FALHOU ===
+
+=== ERROS ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+FAIL packages/components/src/tabs/test/index.tsx
+  ● Tabs › Controlled mode › When `selectedId` is changed by the controlling component › and `selectOnMove` is false › should continue to handle arrow key navigation properly
+
+    expect(element).toHaveFocus()
+
+    Expected element with focus:
+      <button aria-controls="tabs-1-beta-view" aria-selected="true" class="beta-class css-16r9ub-Tab enfox0g1" id="tabs-1-beta" role="tab" tabindex="-1" type="button">Beta</button>
+    Received element with focus:
+      <button aria-controls="tabs-1-alpha-view" aria-selected="false" class="alpha-class css-16r9ub-Tab enfox0g1" data-active-item="" data-focus-visible="" id="tabs-1-alpha" role="tab" type="button">Alpha</button>
+
+      1191 | 							'Beta'
+      1192 | 						);
+    > 1193 | 						expect( await getSelectedTab() ).toHaveFocus();
+           | 						                                 ^
+      1194 |
+      1195 | 						rerender(
+      1196 | 							<ControlledTabs
+
+      at Object.toHaveFocus (packages/components/src/tabs/test/index.tsx:1193:40)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 37 skipped, 1 passed, 39 total
+Snapshots:   0 total
+Time:        1.379 s, estimated 2 s
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #844 - 2025-08-12 22:46:04 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.512 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #845 - 2025-08-12 22:46:06 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.492 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #846 - 2025-08-12 22:46:08 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.489 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #847 - 2025-08-12 22:46:11 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.459 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #848 - 2025-08-12 22:46:13 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.475 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #849 - 2025-08-12 22:46:15 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.507 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #850 - 2025-08-12 22:46:17 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.508 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #851 - 2025-08-12 22:46:19 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.488 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #852 - 2025-08-12 22:46:22 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.477 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #853 - 2025-08-12 22:46:24 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.47 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #854 - 2025-08-12 22:46:26 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.537 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #855 - 2025-08-12 22:46:28 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.512 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #856 - 2025-08-12 22:46:30 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.539 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #857 - 2025-08-12 22:46:33 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.527 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #858 - 2025-08-12 22:46:35 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.521 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #859 - 2025-08-12 22:46:37 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.543 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #860 - 2025-08-12 22:46:39 - PASSOU ===
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+PASS packages/components/src/tabs/test/index.tsx
+
+Test Suites: 1 passed, 1 total
+Tests:       37 skipped, 2 passed, 39 total
+Snapshots:   0 total
+Time:        1.512 s, estimated 2 s
+
+Código de retorno: 0
+
+================================================================================
+
+=== Fim do Log ===

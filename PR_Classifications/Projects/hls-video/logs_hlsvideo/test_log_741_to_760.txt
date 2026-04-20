@@ -1,0 +1,1200 @@
+=== Log de Testes 741 a 760 ===
+
+
+=== Teste #741 - 2025-10-03 10:21:27 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.55s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #742 - 2025-10-03 10:21:38 - FALHOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+not ok 8 - The test did no complete on time. refer to https://github.com/lorenzofox3/zora/tree/master/zora#test-timeout for more info
+  ---
+    operator: "timeout"
+    actual: "test takes longer than 10000ms to complete"
+    expected: "test takes less than 10000ms to complete"
+  ...
+# load promise
+not ok 9 - The test did no complete on time. refer to https://github.com/lorenzofox3/zora/tree/master/zora#test-timeout for more info
+  ---
+    operator: "timeout"
+    actual: "test takes longer than 10000ms to complete"
+    expected: "test takes less than 10000ms to complete"
+  ...
+# play promise
+not ok 10 - The test did no complete on time. refer to https://github.com/lorenzofox3/zora/tree/master/zora#test-timeout for more info
+  ---
+    operator: "timeout"
+    actual: "test takes longer than 10000ms to complete"
+    expected: "test takes less than 10000ms to complete"
+  ...
+
+1..10
+# tests 10
+# pass  7
+# fail  3
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+error Command failed with exit code 1.
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #743 - 2025-10-03 10:21:39 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.63s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #744 - 2025-10-03 10:21:41 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.50s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #745 - 2025-10-03 10:21:43 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.52s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #746 - 2025-10-03 10:21:44 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.53s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #747 - 2025-10-03 10:21:46 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.53s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #748 - 2025-10-03 10:21:48 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.70s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #749 - 2025-10-03 10:21:50 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.55s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #750 - 2025-10-03 10:21:51 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.66s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #751 - 2025-10-03 10:21:53 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.50s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #752 - 2025-10-03 10:21:55 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.61s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #753 - 2025-10-03 10:21:57 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.55s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #754 - 2025-10-03 10:21:58 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.54s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #755 - 2025-10-03 10:22:00 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.80s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #756 - 2025-10-03 10:22:02 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.52s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #757 - 2025-10-03 10:22:04 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.56s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #758 - 2025-10-03 10:22:05 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.56s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #759 - 2025-10-03 10:22:07 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.50s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #760 - 2025-10-03 10:22:09 - PASSOU ===
+yarn run v1.22.22
+$ wet run
+Server running at http://localhost:8000
+GET /test/ 200
+GET /hls-video-element.js 200
+GET /test/test.js 200
+TAP version 13
+# has default video props
+ok 1 - is paused on initialization
+ok 2 - is not ended
+ok 3 - is muted
+# volume
+GET /favicon.ico 404
+GET /favicon.ico 404
+GET /favicon.ico 404
+Failed to load resource: net::ERR_EMPTY_RESPONSE
+ok 4 - is all turned up. volume: 1
+ok 5 - is half volume
+# loop
+ok 6 - loop is false by default
+ok 7 - loop is true
+# duration
+ok 8 - is 115s long
+# load promise
+ok 9 - is 20s long
+# play promise
+ok 10 - is playing after video.play()
+
+1..10
+# tests 10
+# pass  10
+# fail  0
+Done in 1.68s.
+
+=== ERROS ===
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+An error occurred: [Error: ENOENT: no such file or directory, open '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/pedroubuntu/Desktop/FAPESP/flaky-finder/projects/hls-video-element/404.html'
+}
+
+Código de retorno: 0
+
+================================================================================
+
+=== Fim do Log ===

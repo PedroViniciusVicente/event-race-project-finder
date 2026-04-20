@@ -1,0 +1,538 @@
+=== Log de Testes 41 a 60 ===
+
+
+=== Teste #41 - 2025-10-02 21:04:04 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=305.112ms
+
+=== ERROS ===
+(node:59500) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #42 - 2025-10-02 21:04:11 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=727.197ms
+
+=== ERROS ===
+(node:59559) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #43 - 2025-10-02 21:04:18 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        # test count(2) != plan(null)
+        # failed 1 of 2 tests
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=688.816ms
+
+=== ERROS ===
+(node:59618) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #44 - 2025-10-02 21:04:25 - PASSOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    1..0 # no tests found
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=304.817ms
+(node:59678) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #45 - 2025-10-02 21:04:34 - PASSOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        1..2
+    ok 9 - autoEnd = false # time=186.914ms
+    
+    ok 10 - pino.transport with target and targets # SKIP filter: /autoEnd = false/
+    ok 11 - pino.transport with target pino/file # SKIP filter: /autoEnd = false/
+    ok 12 - pino.transport with target pino-pretty # SKIP filter: /autoEnd = false/
+    ok 13 - stdout in worker # SKIP filter: /autoEnd = false/
+    ok 14 - log and exit on ready # SKIP filter: /autoEnd = false/
+    ok 15 - log and exit before ready # SKIP filter: /autoEnd = false/
+    ok 16 - pino transport options with target # SKIP filter: /autoEnd = false/
+    ok 17 - pino transport options with targets # SKIP filter: /autoEnd = false/
+    ok 18 - transport options with target and targets # SKIP filter: /autoEnd = false/
+    ok 19 - transport options with target and stream # SKIP filter: /autoEnd = false/
+    1..19
+    # skip: 18
+    # time=299.906ms
+ok 1 - test/transport/core.test.js # time=299.906ms
+
+1..1
+# time=905.312ms
+(node:59737) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #46 - 2025-10-02 21:04:40 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        # test count(1) != plan(null)
+        # failed 1 test
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=688.786ms
+
+=== ERROS ===
+(node:59796) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #47 - 2025-10-02 21:04:47 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        1..2
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=1204.021ms
+
+=== ERROS ===
+(node:59855) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #48 - 2025-10-02 21:04:58 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=1202.211ms
+
+=== ERROS ===
+(node:59915) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #49 - 2025-10-02 21:05:06 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    # test count(7) != plan(null)
+    # failed 1 of 7 tests
+    # skip: 7
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=691.465ms
+
+=== ERROS ===
+(node:59976) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #50 - 2025-10-02 21:05:14 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        # test count(1) != plan(null)
+        # failed 1 test
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=418.117ms
+
+=== ERROS ===
+(node:60038) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #51 - 2025-10-02 21:05:21 - PASSOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=363.136ms
+(node:60097) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #52 - 2025-10-02 21:05:29 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        1..2
+    ok 9 - autoEnd = false # time=632.913ms
+    
+    ok 10 - pino.transport with target and targets # SKIP filter: /autoEnd = false/
+    # test count(10) != plan(null)
+    # failed 1 of 10 tests
+    # skip: 9
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=1419.289ms
+
+=== ERROS ===
+(node:60156) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #53 - 2025-10-02 21:05:37 - PASSOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=316.222ms
+(node:60215) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #54 - 2025-10-02 21:05:47 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=432.587ms
+
+=== ERROS ===
+(node:60274) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #55 - 2025-10-02 21:05:54 - PASSOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=302.698ms
+(node:60333) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #56 - 2025-10-02 21:06:04 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        1..2
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=1201.169ms
+
+=== ERROS ===
+(node:60392) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #57 - 2025-10-02 21:06:12 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        1..2
+    ok 9 - autoEnd = false # time=419.043ms
+    
+    # test count(9) != plan(null)
+    # failed 1 of 9 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=951.959ms
+
+=== ERROS ===
+(node:60451) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #58 - 2025-10-02 21:06:19 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        # test count(2) != plan(null)
+        # failed 1 of 2 tests
+    # test count(8) != plan(null)
+    # failed 1 of 8 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=784.909ms
+
+=== ERROS ===
+(node:60510) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Teste #59 - 2025-10-02 21:06:29 - PASSOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=305.953ms
+(node:60569) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 0
+
+================================================================================
+
+=== Teste #60 - 2025-10-02 21:06:37 - FALHOU ===
+TAP version 13
+# Subtest: test/transport/core.test.js
+    ok 1 - pino.transport with file # SKIP filter: /autoEnd = false/
+    ok 2 - pino.transport with file (no options + error handling) # SKIP filter: /autoEnd = false/
+    ok 3 - pino.transport with file URL # SKIP filter: /autoEnd = false/
+    ok 4 - pino.transport errors if file does not exists # SKIP filter: /autoEnd = false/
+    ok 5 - pino.transport with esm # SKIP filter: /autoEnd = false/
+    ok 6 - pino.transport with two files # SKIP filter: /autoEnd = false/
+    ok 7 - pino.transport with an array including a pino-pretty destination # SKIP filter: /autoEnd = false/
+    ok 8 - no transport.end() # SKIP filter: /autoEnd = false/
+    # Subtest: autoEnd = false
+        ok 1 - should be equal
+        ok 2 - should be equivalent
+        1..2
+    ok 9 - autoEnd = false # time=542.774ms
+    
+    # test count(9) != plan(null)
+    # failed 1 of 9 tests
+    # skip: 8
+ok 1 - test/transport/core.test.js
+
+1..1
+# time=1237.389ms
+
+=== ERROS ===
+(node:60628) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Código de retorno: 1
+
+================================================================================
+
+=== Fim do Log ===
