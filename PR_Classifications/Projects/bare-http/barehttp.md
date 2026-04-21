@@ -8,12 +8,12 @@ PR URL: https://github.com/holepunchto/bare-http1/pull/17
 ![PR Code](image1.png)
 
 ## Our Pattern Classification
-Lifecycle Race: 
+**Lifecycle Race:**
 The issue arises from an incorrect ordering between different phases of the request–response lifecycle in a Node.js HTTP server.
-Specifically, the server begins sending the response (res.write / res.end) before the request body has been fully received and processed (req.on('end')). Due to asynchronous scheduling (e.g., via setImmediate), the response completion may occur before the request stream finishes emitting all its data. This creates a race condition between the request consumption phase and the response finalization phase, which are both part of the server’s lifecycle management.
+Specifically, the server begins sending the response (`res.write` / `res.end`) before the request body has been fully received and processed (`req.on('end')`). Due to asynchronous scheduling (e.g., via `setImmediate`), the response completion may occur before the request stream finishes emitting all its data. This creates a race condition between the request consumption phase and the response finalization phase, which are both part of the server’s lifecycle management.
 
 ## Wang Pattern Classification
-Order Violation:
+**Order Violation:**
 The root problem is that two logically dependent events: (1) the completion of request body processing and (2) the sending of the full response, are executed without enforcing the intended order between them. The correct behavior requires that the request be fully received and processed before the response is finalized. However, due to asynchronous execution and the use of setImmediate, the response completion can occur prematurely.
 
 ## Setup

@@ -8,10 +8,14 @@ PR URL: https://github.com/muxinc/hls-video-element/pull/32
 ![PR Code](image2.png)
 
 ## Our Pattern Classification
-Stabilization Race:
+**Lifecycle Race:**
+The issue is related to the improper sequencing of operations during the lifecycle of a custom video element.
+When the `src` attribute changes, the `load()` method is triggered, which internally calls `#destroy()` to clean up any existing HLS instance before initializing a new one. However, without proper synchronization, the initialization logic may execute before all relevant attributes are fully applied to the element.
+The fix introduces an `await Promise.resolve()` to wait for one microtask tick in the `load()` method. This ensures that all pending attribute updates and lifecycle callbacks are completed before proceeding with the initialization of the HLS instance.
 
 ## Wang Pattern Classification
-Order Violation:
+**Order Violation:**
+The correct behavior requires a strict ordering: (1) all attribute updates (especially `src`) must be fully applied, (2) previous resources must be destroyed, and only then (3) a new HLS instance should be initialized. However, due to the asynchronous nature of attribute propagation and lifecycle callbacks, the initialization logic may run before the system has completed earlier steps.
 
 ## Setup
 ```

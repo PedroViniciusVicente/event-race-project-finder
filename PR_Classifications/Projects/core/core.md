@@ -8,11 +8,16 @@ PR URL: https://github.com/BrightspaceUI/core/pull/1120
 ![PR Code](image1.png)
 
 ## Our Pattern Classification
-Stabilization Race:
+**Stabilization Race:**
+The flakiness arises from insufficient time being allowed for the system state to stabilize before executing dependent logic.
+
+In this case, the test updates the timezone configuration (`documentLocaleSettings.timezone.identifier`) and immediately invokes the function `getShiftedEndDateTime`, which relies on this updated timezone to compute correct results. Although the assignment itself is synchronous, its propagation, likely through the underlying UI framework (e.g., Lit), occurs asynchronously. As a result, the system may not yet reflect the updated timezone when the function is executed, leading to intermittent test failures.
+
+The absence of an explicit event or callback signaling that the timezone change has been fully applied exacerbates this issue. The introduced fix (`await aTimeout(10)`) artificially delays execution, allowing enough time for the asynchronous propagation of the timezone change to complete. This ensures that the system reaches a stable and consistent state before the test logic runs, which is the defining characteristic of a Stabilization Race.
 
 ## Wang Pattern Classification
-Order Violation:
-
+**Order Violation:**
+The core problem lies in the lack of enforced ordering between two dependent operations: (1) updating the timezone configuration and (2) executing a function that depends on that configuration. The intended behavior requires that the timezone update be fully applied and observable before the function is called. However, due to asynchronous propagation, the function may execute before the update has taken effect.
 
 ## Setup
 ```

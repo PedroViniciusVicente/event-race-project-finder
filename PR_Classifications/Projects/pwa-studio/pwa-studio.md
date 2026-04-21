@@ -8,10 +8,14 @@ PR: https://github.com/magento/pwa-studio/pull/743
 ![PR Code](image2.png)
 
 ## Our Pattern Classification
-Stabilization Race:
+**Stabilization Race:**
+In the original test, the use of `await wait()` (from the `waait` library) effectively introduces a minimal delay (similar to `setTimeout(0)`), allowing only a single event loop tick before proceeding. However, this approach does not guarantee that all asynchronous rendering and data-fetching operations, especially those involving React have completed.
+
+As a result, the test may execute assertions (e.g., checking the number of `CategoryTile` components) before the component has finished rendering, leading to flaky outcomes. The fix replaces this approach with `wait-for-expect`, which repeatedly evaluates the assertion until it passes or a timeout is reached. This ensures that the component has reached a stable state before validation occurs.
 
 ## Wang Pattern Classification
-Order Violation:
+**Order Violation:**
+The intended sequence of events is: (1) initiate component rendering and data fetching, (2) complete all asynchronous updates, and (3) perform assertions on the final rendered output. However, the original implementation does not enforce this ordering, as the test proceeds after an arbitrary and insufficient delay.
 
 ## Setup Projeto
 ```

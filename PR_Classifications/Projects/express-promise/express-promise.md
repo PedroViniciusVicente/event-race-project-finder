@@ -8,10 +8,15 @@ PR URL: https://github.com/goodeggs/express-promise-middleware/pull/2/files
 ![PR Code](image1.png)
 
 ## Our Pattern Classification
-Stabilization Race:
+**Stabilization Race:**
+In the original implementation, the middleware checks the flag `res.finished` to determine whether a response has already been completed. However, sending a response (e.g., via `res.send`) is an asynchronous operation, and there exists a time window where the response has already been initiated but not yet fully completed. During this window, `res.finished` remains false, even though the response is in progress.
+
+The fix replaces `res.finished` with `res.headersSent`, which is set at the moment the response is initiated. This ensures that the middleware observes a stable and accurate state when making decisions, eliminating the timing window that caused the race.
 
 ## Wang Pattern Classification
-Order Violation:
+**Order Violation:**
+The intended ordering is that once a response is initiated, the middleware should not proceed to call `next()`. However, due to the asynchronous nature of response completion and the delayed update of `res.finished`, the middleware’s check may occur before the system reflects that the response has already started. The fix ensures that the correct ordering is respected by using `res.headersSent`, which reflects the initiation of the response immediately.
+
 
 ## Setup
 ```
