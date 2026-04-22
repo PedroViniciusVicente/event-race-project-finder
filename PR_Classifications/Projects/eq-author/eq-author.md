@@ -5,7 +5,9 @@ PR URL: https://github.com/ONSdigital/eq-author-app/pull/100
 ![PR Title and Description](image2.png)
 
 ## Pull Request Code
-![PR Code](image1.png)
+![PR Code 1](image1.png)
+
+![PR Code 2](image3.png)
 
 ## Our Pattern Classification
 **Concurrent Access Race:**
