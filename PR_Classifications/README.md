@@ -1,4 +1,16 @@
-| PR | Project Name | My Pattern | Wang ? Pattern | Main Component Affected |
+# Classification, Setup, Logs and Discussions for Pull Requests:
+
+Inside the [Projects](Projects) folder we present the following artifcats for each of the 27 analyzed projects:
+
+- Information from the Pull Request reporting the concurrency issue;
+- Project setup and test execution instructions;
+- Logs of the flaky behavior;
+- Classification table with the rationale from both researchers.
+
+
+## Classification Table:
+
+| PR | Project Name | My Pattern | Wang Pattern | Main Layer(s) Affected |
 | :--- | :--- | :--- | :--- | :--- |
 | https://github.com/cs4218/cs4218-2420-ecom-project-team15/pull/21 | cs4218-2420-ecom-project-team15 | External Race | N/A | Database - Mongodb (Backend <-> DBMS) |
 | https://github.com/magento/pwa-studio/pull/743 | pwa-studio | Stabilization Race | Order Violation | FrontEnd - React |
