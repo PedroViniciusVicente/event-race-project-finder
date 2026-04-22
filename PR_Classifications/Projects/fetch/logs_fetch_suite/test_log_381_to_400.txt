@@ -1,0 +1,1044 @@
+=== Test Log 381 to 400 ===
+
+
+=== Test #381 - 2026-04-22 00:37:48 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (1132ms)
+    ✔ supports HTTP/2 (1455ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (691ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (613ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (511ms)
+    ✔ creating custom context works (820ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1000ms)
+    ✔ overriding user-agent works (context) (1353ms)
+    ✔ overriding user-agent works (header) (204ms)
+    ✔ forcing HTTP/1.1 works (2354ms)
+    ✔ supports parallel requests (55ms)
+    ✔ supports json POST (252ms)
+    ✔ supports json POST (override content-type) (204ms)
+    ✔ supports text body (614ms)
+    ✔ supports text multibyte body (411ms)
+    ✔ supports buffer body (288ms)
+    ✔ supports arrayBuffer body (222ms)
+    ✔ supports text body (html) (204ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (205ms)
+    ✔ supports spec-compliant FormData body (194ms)
+    ✔ supports POST without body (150ms)
+    ✔ supports gzip content encoding (170ms)
+    ✔ supports deflate content encoding (204ms)
+    ✔ supports brotli content encoding (204ms)
+    ✔ supports HTTP/2 server push (1832ms)
+    ✔ HTTP/2 server push can be rejected (3545ms)
+    ✔ supports timeout for idle pushed streams (1835ms)
+    ✔ supports timeout for idle HTTP/2 session (1128ms)
+
+
+  33 passing (24s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #382 - 2026-04-22 00:38:11 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (428ms)
+    ✔ supports HTTP/2 (1534ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (618ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (610ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (204ms)
+    ✔ creating custom context works (1946ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (843ms)
+    ✔ overriding user-agent works (header) (409ms)
+    ✔ forcing HTTP/1.1 works (2355ms)
+    ✔ supports parallel requests (56ms)
+    ✔ supports json POST (251ms)
+    ✔ supports json POST (override content-type) (204ms)
+    ✔ supports text body (205ms)
+    ✔ supports text multibyte body (512ms)
+    ✔ supports buffer body (205ms)
+    ✔ supports arrayBuffer body (204ms)
+    ✔ supports text body (html) (204ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (243ms)
+    ✔ supports spec-compliant FormData body (167ms)
+    ✔ supports POST without body (205ms)
+    ✔ supports gzip content encoding (206ms)
+    ✔ supports deflate content encoding (203ms)
+    ✔ supports brotli content encoding (235ms)
+    ✔ supports HTTP/2 server push (1654ms)
+    ✔ HTTP/2 server push can be rejected (3594ms)
+    ✔ supports timeout for idle pushed streams (1834ms)
+    ✔ supports timeout for idle HTTP/2 session (1230ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #383 - 2026-04-22 00:38:34 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (418ms)
+    ✔ supports HTTP/2 (1636ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (819ms)
+    ✔ supports binary response body (Stream) (923ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (612ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (205ms)
+    ✔ creating custom context works (883ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (778ms)
+    ✔ overriding user-agent works (header) (204ms)
+    ✔ forcing HTTP/1.1 works (2458ms)
+    ✔ supports parallel requests (57ms)
+    ✔ supports json POST (251ms)
+    ✔ supports json POST (override content-type) (145ms)
+    ✔ supports text body (263ms)
+    ✔ supports text multibyte body (211ms)
+    ✔ supports buffer body (199ms)
+    ✔ supports arrayBuffer body (204ms)
+    ✔ supports text body (html) (205ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (204ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (204ms)
+    ✔ supports gzip content encoding (207ms)
+    ✔ supports deflate content encoding (555ms)
+    ✔ supports brotli content encoding (147ms)
+    ✔ supports HTTP/2 server push (1598ms)
+    ✔ HTTP/2 server push can be rejected (3487ms)
+    ✔ supports timeout for idle pushed streams (1837ms)
+    ✔ supports timeout for idle HTTP/2 session (1228ms)
+
+
+  33 passing (22s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #384 - 2026-04-22 00:38:57 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (422ms)
+    ✔ supports HTTP/2 (1636ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (613ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (225ms)
+    ✔ creating custom context works (799ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (741ms)
+    ✔ overriding user-agent works (header) (205ms)
+    ✔ forcing HTTP/1.1 works (2458ms)
+    ✔ supports parallel requests (58ms)
+    ✔ supports json POST (285ms)
+    ✔ supports json POST (override content-type) (182ms)
+    ✔ supports text body (192ms)
+    ✔ supports text multibyte body (409ms)
+    ✔ supports buffer body (204ms)
+    ✔ supports arrayBuffer body (409ms)
+    ✔ supports text body (html) (409ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (205ms)
+    ✔ supports spec-compliant FormData body (204ms)
+    ✔ supports POST without body (205ms)
+    ✔ supports gzip content encoding (206ms)
+    ✔ supports deflate content encoding (204ms)
+    ✔ supports brotli content encoding (204ms)
+    ✔ supports HTTP/2 server push (1575ms)
+    ✔ HTTP/2 server push can be rejected (3602ms)
+    ✔ supports timeout for idle pushed streams (1730ms)
+    ✔ supports timeout for idle HTTP/2 session (1231ms)
+
+
+  33 passing (22s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #385 - 2026-04-22 00:39:20 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (425ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (890ms)
+    ✔ supports binary response body (Stream) (849ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (614ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (205ms)
+    ✔ creating custom context works (820ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1002ms)
+    ✔ overriding user-agent works (context) (1046ms)
+    ✔ overriding user-agent works (header) (232ms)
+    ✔ forcing HTTP/1.1 works (2332ms)
+    ✔ supports parallel requests (55ms)
+    ✔ supports json POST (247ms)
+    ✔ supports json POST (override content-type) (204ms)
+    ✔ supports text body (148ms)
+    ✔ supports text multibyte body (671ms)
+    ✔ supports buffer body (204ms)
+    ✔ supports arrayBuffer body (205ms)
+    ✔ supports text body (html) (204ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (205ms)
+    ✔ supports spec-compliant FormData body (216ms)
+    ✔ supports POST without body (193ms)
+    ✔ supports gzip content encoding (411ms)
+    ✔ supports deflate content encoding (204ms)
+    ✔ supports brotli content encoding (205ms)
+    ✔ supports HTTP/2 server push (1795ms)
+    ✔ HTTP/2 server push can be rejected (3380ms)
+    ✔ supports timeout for idle pushed streams (1833ms)
+    ✔ supports timeout for idle HTTP/2 session (1144ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #386 - 2026-04-22 00:39:43 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (824ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (1025ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (613ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (204ms)
+    ✔ creating custom context works (820ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1002ms)
+    ✔ overriding user-agent works (context) (843ms)
+    ✔ overriding user-agent works (header) (205ms)
+    ✔ forcing HTTP/1.1 works (2457ms)
+    ✔ supports parallel requests (56ms)
+    ✔ supports json POST (251ms)
+    ✔ supports json POST (override content-type) (202ms)
+    ✔ supports text body (206ms)
+    ✔ supports text multibyte body (203ms)
+    ✔ supports buffer body (206ms)
+    ✔ supports arrayBuffer body (212ms)
+    ✔ supports text body (html) (342ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (162ms)
+    ✔ supports spec-compliant FormData body (307ms)
+    ✔ supports POST without body (145ms)
+    ✔ supports gzip content encoding (150ms)
+    ✔ supports deflate content encoding (262ms)
+    ✔ supports brotli content encoding (160ms)
+    ✔ supports HTTP/2 server push (1790ms)
+    ✔ HTTP/2 server push can be rejected (3591ms)
+    ✔ supports timeout for idle pushed streams (1833ms)
+    ✔ supports timeout for idle HTTP/2 session (1231ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #387 - 2026-04-22 00:40:06 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (430ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (1127ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (614ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (422ms)
+    ✔ creating custom context works (807ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1003ms)
+    ✔ AbortController works (slow connect) (1005ms)
+    ✔ overriding user-agent works (context) (837ms)
+    ✔ overriding user-agent works (header) (207ms)
+    ✔ forcing HTTP/1.1 works (2353ms)
+    ✔ supports parallel requests (85ms)
+    ✔ supports json POST (222ms)
+    ✔ supports json POST (override content-type) (203ms)
+    ✔ supports text body (205ms)
+    ✔ supports text multibyte body (151ms)
+    ✔ supports buffer body (426ms)
+    ✔ supports arrayBuffer body (1062ms)
+    ✔ supports text body (html) (204ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (205ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (205ms)
+    ✔ supports gzip content encoding (206ms)
+    ✔ supports deflate content encoding (204ms)
+    ✔ supports brotli content encoding (204ms)
+    ✔ supports HTTP/2 server push (1673ms)
+    ✔ HTTP/2 server push can be rejected (3384ms)
+    ✔ supports timeout for idle pushed streams (1745ms)
+    ✔ supports timeout for idle HTTP/2 session (1230ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #388 - 2026-04-22 00:40:30 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (431ms)
+    ✔ supports HTTP/2 (1636ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (613ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (512ms)
+    ✔ creating custom context works (820ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (953ms)
+    ✔ overriding user-agent works (header) (195ms)
+    ✔ forcing HTTP/1.1 works (2458ms)
+    ✔ supports parallel requests (54ms)
+    ✔ supports json POST (252ms)
+    ✔ supports json POST (override content-type) (203ms)
+    ✔ supports text body (204ms)
+    ✔ supports text multibyte body (615ms)
+    ✔ supports buffer body (211ms)
+    ✔ supports arrayBuffer body (199ms)
+    ✔ supports text body (html) (204ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (411ms)
+    ✔ supports spec-compliant FormData body (204ms)
+    ✔ supports POST without body (204ms)
+    ✔ supports gzip content encoding (207ms)
+    ✔ supports deflate content encoding (203ms)
+    ✔ supports brotli content encoding (287ms)
+    ✔ supports HTTP/2 server push (1834ms)
+    ✔ HTTP/2 server push can be rejected (3465ms)
+    ✔ supports timeout for idle pushed streams (1834ms)
+    ✔ supports timeout for idle HTTP/2 session (1128ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #389 - 2026-04-22 00:40:54 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (423ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (946ms)
+    ✔ supports binary response body (Stream) (692ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (620ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (198ms)
+    ✔ creating custom context works (863ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1002ms)
+    ✔ overriding user-agent works (context) (1105ms)
+    ✔ overriding user-agent works (header) (204ms)
+    ✔ forcing HTTP/1.1 works (2458ms)
+    ✔ supports parallel requests (54ms)
+    ✔ supports json POST (330ms)
+    ✔ supports json POST (override content-type) (302ms)
+    ✔ supports text body (236ms)
+    ✔ supports text multibyte body (204ms)
+    ✔ supports buffer body (204ms)
+    ✔ supports arrayBuffer body (205ms)
+    ✔ supports text body (html) (512ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (204ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (410ms)
+    ✔ supports gzip content encoding (206ms)
+    ✔ supports deflate content encoding (409ms)
+    ✔ supports brotli content encoding (518ms)
+    ✔ supports HTTP/2 server push (1794ms)
+    ✔ HTTP/2 server push can be rejected (3579ms)
+    ✔ supports timeout for idle pushed streams (1636ms)
+    ✔ supports timeout for idle HTTP/2 session (1223ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #390 - 2026-04-22 00:41:17 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (757ms)
+    ✔ supports HTTP/2 (1619ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (819ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (615ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (202ms)
+    ✔ creating custom context works (753ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (713ms)
+    ✔ overriding user-agent works (header) (197ms)
+    ✔ forcing HTTP/1.1 works (2151ms)
+    ✔ supports parallel requests (55ms)
+    ✔ supports json POST (290ms)
+    ✔ supports json POST (override content-type) (164ms)
+    ✔ supports text body (205ms)
+    ✔ supports text multibyte body (204ms)
+    ✔ supports buffer body (206ms)
+    ✔ supports arrayBuffer body (226ms)
+    ✔ supports text body (html) (183ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (205ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (922ms)
+    ✔ supports gzip content encoding (306ms)
+    ✔ supports deflate content encoding (206ms)
+    ✔ supports brotli content encoding (512ms)
+    ✔ supports HTTP/2 server push (1791ms)
+    ✔ HTTP/2 server push can be rejected (3589ms)
+    ✔ supports timeout for idle pushed streams (1835ms)
+    ✔ supports timeout for idle HTTP/2 session (1229ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #391 - 2026-04-22 00:41:40 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (434ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (715ms)
+    ✔ supports binary response body (Stream) (616ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (612ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (205ms)
+    ✔ creating custom context works (819ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (841ms)
+    ✔ overriding user-agent works (header) (205ms)
+    ✔ forcing HTTP/1.1 works (2253ms)
+    ✔ supports parallel requests (57ms)
+    ✔ supports json POST (152ms)
+    ✔ supports json POST (override content-type) (145ms)
+    ✔ supports text body (145ms)
+    ✔ supports text multibyte body (216ms)
+    ✔ supports buffer body (204ms)
+    ✔ supports arrayBuffer body (205ms)
+    ✔ supports text body (html) (205ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (205ms)
+    ✔ supports spec-compliant FormData body (151ms)
+    ✔ supports POST without body (156ms)
+    ✔ supports gzip content encoding (269ms)
+    ✔ supports deflate content encoding (1165ms)
+    ✔ supports brotli content encoding (205ms)
+    ✔ supports HTTP/2 server push (1813ms)
+    ✔ HTTP/2 server push can be rejected (3566ms)
+    ✔ supports timeout for idle pushed streams (1834ms)
+    ✔ supports timeout for idle HTTP/2 session (1230ms)
+
+
+  33 passing (22s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #392 - 2026-04-22 00:42:03 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (734ms)
+    ✔ supports HTTP/2 (1534ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (612ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (204ms)
+    ✔ creating custom context works (820ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1002ms)
+    ✔ overriding user-agent works (context) (843ms)
+    ✔ overriding user-agent works (header) (717ms)
+    ✔ forcing HTTP/1.1 works (2355ms)
+    ✔ supports parallel requests (56ms)
+    ✔ supports json POST (250ms)
+    ✔ supports json POST (override content-type) (208ms)
+    ✔ supports text body (200ms)
+    ✔ supports text multibyte body (205ms)
+    ✔ supports buffer body (205ms)
+    ✔ supports arrayBuffer body (512ms)
+    ✔ supports text body (html) (205ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (207ms)
+    ✔ supports spec-compliant FormData body (201ms)
+    ✔ supports POST without body (205ms)
+    ✔ supports gzip content encoding (617ms)
+    ✔ supports deflate content encoding (203ms)
+    ✔ supports brotli content encoding (151ms)
+    ✔ supports HTTP/2 server push (1637ms)
+    ✔ HTTP/2 server push can be rejected (3592ms)
+    ✔ supports timeout for idle pushed streams (1834ms)
+    ✔ supports timeout for idle HTTP/2 session (1237ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #393 - 2026-04-22 00:42:26 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (427ms)
+    ✔ supports HTTP/2 (1636ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (616ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (612ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (204ms)
+    ✔ creating custom context works (923ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (841ms)
+    ✔ overriding user-agent works (header) (204ms)
+    ✔ forcing HTTP/1.1 works (2458ms)
+    ✔ supports parallel requests (56ms)
+    ✔ supports json POST (250ms)
+    ✔ supports json POST (override content-type) (203ms)
+    ✔ supports text body (206ms)
+    ✔ supports text multibyte body (244ms)
+    ✔ supports buffer body (165ms)
+    ✔ supports arrayBuffer body (204ms)
+    ✔ supports text body (html) (205ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (409ms)
+    ✔ supports spec-compliant FormData body (204ms)
+    ✔ supports POST without body (246ms)
+    ✔ supports gzip content encoding (218ms)
+    ✔ supports deflate content encoding (305ms)
+    ✔ supports brotli content encoding (153ms)
+    ✔ supports HTTP/2 server push (1569ms)
+    ✔ HTTP/2 server push can be rejected (3606ms)
+    ✔ supports timeout for idle pushed streams (1834ms)
+    ✔ supports timeout for idle HTTP/2 session (1230ms)
+
+
+  33 passing (22s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #394 - 2026-04-22 00:42:49 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (425ms)
+    ✔ supports HTTP/2 (1533ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (819ms)
+    ✔ supports binary response body (Stream) (717ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (614ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (147ms)
+    ✔ creating custom context works (1185ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1002ms)
+    ✔ overriding user-agent works (context) (841ms)
+    ✔ overriding user-agent works (header) (204ms)
+    ✔ forcing HTTP/1.1 works (2355ms)
+    ✔ supports parallel requests (55ms)
+    ✔ supports json POST (252ms)
+    ✔ supports json POST (override content-type) (203ms)
+    ✔ supports text body (205ms)
+    ✔ supports text multibyte body (204ms)
+    ✔ supports buffer body (255ms)
+    ✔ supports arrayBuffer body (154ms)
+    ✔ supports text body (html) (204ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (410ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (308ms)
+    ✔ supports gzip content encoding (922ms)
+    ✔ supports deflate content encoding (202ms)
+    ✔ supports brotli content encoding (671ms)
+    ✔ supports HTTP/2 server push (1737ms)
+    ✔ HTTP/2 server push can be rejected (3483ms)
+    ✔ supports timeout for idle pushed streams (1936ms)
+    ✔ supports timeout for idle HTTP/2 session (1165ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #395 - 2026-04-22 00:43:12 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (397ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (820ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (612ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (205ms)
+    ✔ creating custom context works (638ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (819ms)
+    ✔ overriding user-agent works (header) (206ms)
+    ✔ forcing HTTP/1.1 works (2251ms)
+    ✔ supports parallel requests (55ms)
+    ✔ supports json POST (252ms)
+    ✔ supports json POST (override content-type) (204ms)
+    ✔ supports text body (207ms)
+    ✔ supports text multibyte body (511ms)
+    ✔ supports buffer body (206ms)
+    ✔ supports arrayBuffer body (203ms)
+    ✔ supports text body (html) (205ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (203ms)
+    ✔ supports spec-compliant FormData body (204ms)
+    ✔ supports POST without body (212ms)
+    ✔ supports gzip content encoding (199ms)
+    ✔ supports deflate content encoding (205ms)
+    ✔ supports brotli content encoding (228ms)
+    ✔ supports HTTP/2 server push (1554ms)
+    ✔ HTTP/2 server push can be rejected (3597ms)
+    ✔ supports timeout for idle pushed streams (1834ms)
+    ✔ supports timeout for idle HTTP/2 session (1230ms)
+
+
+  33 passing (22s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #396 - 2026-04-22 00:43:34 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (440ms)
+    ✔ supports HTTP/2 (1628ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (621ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (607ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (147ms)
+    ✔ creating custom context works (876ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1000ms)
+    ✔ overriding user-agent works (context) (843ms)
+    ✔ overriding user-agent works (header) (205ms)
+    ✔ forcing HTTP/1.1 works (2662ms)
+    ✔ supports parallel requests (56ms)
+    ✔ supports json POST (251ms)
+    ✔ supports json POST (override content-type) (511ms)
+    ✔ supports text body (214ms)
+    ✔ supports text multibyte body (196ms)
+    ✔ supports buffer body (205ms)
+    ✔ supports arrayBuffer body (204ms)
+    ✔ supports text body (html) (145ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (162ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (204ms)
+    ✔ supports gzip content encoding (244ms)
+    ✔ supports deflate content encoding (166ms)
+    ✔ supports brotli content encoding (205ms)
+    ✔ supports HTTP/2 server push (1685ms)
+    ✔ HTTP/2 server push can be rejected (3490ms)
+    ✔ supports timeout for idle pushed streams (1835ms)
+    ✔ supports timeout for idle HTTP/2 session (1127ms)
+
+
+  33 passing (22s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #397 - 2026-04-22 00:43:57 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (426ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (819ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (612ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (210ms)
+    ✔ creating custom context works (890ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1002ms)
+    ✔ overriding user-agent works (context) (767ms)
+    ✔ overriding user-agent works (header) (271ms)
+    ✔ forcing HTTP/1.1 works (2186ms)
+    ✔ supports parallel requests (56ms)
+    ✔ supports json POST (250ms)
+    ✔ supports json POST (override content-type) (614ms)
+    ✔ supports text body (205ms)
+    ✔ supports text multibyte body (304ms)
+    ✔ supports buffer body (617ms)
+    ✔ supports arrayBuffer body (204ms)
+    ✔ supports text body (html) (626ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (204ms)
+    ✔ supports spec-compliant FormData body (193ms)
+    ✔ supports POST without body (205ms)
+    ✔ supports gzip content encoding (206ms)
+    ✔ supports deflate content encoding (204ms)
+    ✔ supports brotli content encoding (204ms)
+    ✔ supports HTTP/2 server push (1846ms)
+    ✔ HTTP/2 server push can be rejected (3328ms)
+    ✔ supports timeout for idle pushed streams (1737ms)
+    ✔ supports timeout for idle HTTP/2 session (1125ms)
+
+
+  33 passing (23s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #398 - 2026-04-22 00:44:24 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (431ms)
+    ✔ supports HTTP/2 (1636ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (4197ms)
+    ✔ supports binary response body (Stream) (1128ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (612ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (922ms)
+    ✔ creating custom context works (819ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1001ms)
+    ✔ AbortController works (slow connect) (1002ms)
+    ✔ overriding user-agent works (context) (842ms)
+    ✔ overriding user-agent works (header) (204ms)
+    ✔ forcing HTTP/1.1 works (2356ms)
+    ✔ supports parallel requests (54ms)
+    ✔ supports json POST (264ms)
+    ✔ supports json POST (override content-type) (193ms)
+    ✔ supports text body (205ms)
+    ✔ supports text multibyte body (204ms)
+    ✔ supports buffer body (205ms)
+    ✔ supports arrayBuffer body (206ms)
+    ✔ supports text body (html) (215ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (193ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (205ms)
+    ✔ supports gzip content encoding (206ms)
+    ✔ supports deflate content encoding (511ms)
+    ✔ supports brotli content encoding (204ms)
+    ✔ supports HTTP/2 server push (1692ms)
+    ✔ HTTP/2 server push can be rejected (3586ms)
+    ✔ supports timeout for idle pushed streams (1834ms)
+    ✔ supports timeout for idle HTTP/2 session (1231ms)
+
+
+  33 passing (27s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #399 - 2026-04-22 00:44:49 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (432ms)
+    ✔ supports HTTP/2 (1637ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (818ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (614ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (204ms)
+    ✔ creating custom context works (1025ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (1111ms)
+    ✔ overriding user-agent works (header) (241ms)
+    ✔ forcing HTTP/1.1 works (2457ms)
+    ✔ supports parallel requests (55ms)
+    ✔ supports json POST (252ms)
+    ✔ supports json POST (override content-type) (272ms)
+    ✔ supports text body (546ms)
+    ✔ supports text multibyte body (204ms)
+    ✔ supports buffer body (820ms)
+    ✔ supports arrayBuffer body (204ms)
+    ✔ supports text body (html) (205ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (614ms)
+    ✔ supports spec-compliant FormData body (410ms)
+    ✔ supports POST without body (154ms)
+    ✔ supports gzip content encoding (256ms)
+    ✔ supports deflate content encoding (204ms)
+    ✔ supports brotli content encoding (205ms)
+    ✔ supports HTTP/2 server push (1816ms)
+    ✔ HTTP/2 server push can be rejected (3563ms)
+    ✔ supports timeout for idle pushed streams (1835ms)
+    ✔ supports timeout for idle HTTP/2 session (1230ms)
+
+
+  33 passing (24s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== Test #400 - 2026-04-22 00:45:14 - PASSED ===
+
+
+  Core Tests
+    ✔ supports HTTP/1(.1) (424ms)
+    ✔ supports HTTP/2 (1636ms)
+    ✔ throws on unsupported protocol
+    ✔ unsupported method (1331ms)
+    ✔ supports binary response body (Stream) (615ms)
+    - supports gzip/deflate/br content encoding (default)
+    ✔ supports disabling gzip/deflate/br content encoding (613ms)
+    - supports gzip/deflate/br content decoding (default)
+    - supports disabling gzip/deflate/br content decoding
+    ✔ does not overwrite accept-encoding header (145ms)
+    ✔ creating custom context works (777ms)
+    ✔ AbortController works (premature abort)
+    ✔ AbortController works (premature abort, fresh context)
+    ✔ AbortController works (slow response) (1002ms)
+    ✔ AbortController works (slow connect) (1001ms)
+    ✔ overriding user-agent works (context) (630ms)
+    ✔ overriding user-agent works (header) (930ms)
+    ✔ forcing HTTP/1.1 works (2458ms)
+    ✔ supports parallel requests (55ms)
+    ✔ supports json POST (251ms)
+    ✔ supports json POST (override content-type) (204ms)
+    ✔ supports text body (717ms)
+    ✔ supports text multibyte body (307ms)
+    ✔ supports buffer body (718ms)
+    ✔ supports arrayBuffer body (613ms)
+    ✔ supports text body (html) (409ms)
+    - supports stream body
+    - coerces arbitrary body to string
+    ✔ supports URLSearchParams body (205ms)
+    ✔ supports spec-compliant FormData body (205ms)
+    ✔ supports POST without body (205ms)
+    ✔ supports gzip content encoding (410ms)
+    ✔ supports deflate content encoding (203ms)
+    ✔ supports brotli content encoding (204ms)
+    ✔ supports HTTP/2 server push (1800ms)
+    ✔ HTTP/2 server push can be rejected (4195ms)
+    ✔ supports timeout for idle pushed streams (1833ms)
+    ✔ supports timeout for idle HTTP/2 session (1230ms)
+
+
+  33 passing (25s)
+  5 pending
+
+
+Return code: 0
+
+================================================================================
+
+=== End of Log ===
