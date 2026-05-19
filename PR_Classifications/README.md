@@ -1,11 +1,13 @@
 # Classification, Setup, Logs and Discussions for Pull Requests:
 
-Inside the [Projects](Projects) folder we present the following artifcats for each of the 22 analyzed projects:
+Inside the [Projects](Projects) folder we present the following artifacts for each of the 22 analyzed projects:
 
 - Information from the Pull Request reporting the concurrency issue;
 - Project setup and test execution instructions;
 - Logs of the flaky behavior;
 - Classification table with the rationale from both researchers.
+
+An example of this analysis is observed in: [cs4218 analysis](Projects/cs4218/cs4218.md).
 
 
 ## Classification Table:
