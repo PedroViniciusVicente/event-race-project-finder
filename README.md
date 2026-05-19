@@ -1,8 +1,8 @@
 # Awaiting Trouble: Source Code and Artifacts Repository
 
-This repository contains the source code and artifacts needed to replicate the experiments presented in the paper "Awaiting Trouble: An Preliminary Study on Event Races and Flaky Tests in Modern JavaScript Applications", submitted to [ICSE's 3rd International Flaky Tests Workshop 2026 (FTW 2026)](https://conf.researchr.org/home/icse-2026/ftw-2026).
+This repository contains the source code and artifacts needed to replicate, follow and evaluate the study presented in the paper "Awaiting Trouble: Characterizing Asynchronous Concurrency issues in Modern Promise-based JavaScript Applications", submitted to [CBSoft's 30th Brazilian Symposium on Programming Languages (SBLP 2026)](https://cbsoft.sbc.org.br/2026/pt/symposiums/sblp/call/).
 
-In this repository, JavaScript projects containing event races, a special form of race condition, were searched, filtered and analyzed using Pull Requests (PRs) collected from the GitHub API. The 20 analyzed projects described in the shortpaper were also classified according to its characteristics and reproduced following a protocol to reveal flaky tests.
+In this repository, JavaScript projects containing concurrency issues, were searched, filtered and analyzed using Pull Requests (PRs) collected from the GitHub API. The 22 analyzed projects described in the paper were also classified according to its characteristics by both authors and reproduced following a protocol to reveal flaky tests.
 
 
 ## Prerequisites
@@ -39,12 +39,12 @@ We have already included the [final, filtered Pull Requests dataset](filtered_ev
 
 ### Flaky Tests Reproduction
 
-Our analysis resulted in a dataset of 20 curated bugs that were manually analyzed.
+Our analysis resulted in a dataset of 22 curated bugs that were manually analyzed.
 
 - The projects pre-fix commit, are available as compacted archives in our Google Drive folder: 
 [Compacted Projects](https://drive.google.com/drive/folders/1X4r3UzZLAkntMeO5bltF-uxXzP-9v28V?usp=sharing).
 
-- For each project, we have created a step-by-step guide detailing the setup, containing the commands used to run, the required Node.js version and the logs of the flaky behavior:
-[Projects Setup and Flakiness Logs](https://drive.google.com/drive/folders/1JgY6P6Uz4JqIeuQgYF6njTuTbQQvWXA1?usp=drive_link).
+- For each project, we have created a guide detailing the classification proccess of each case issue by both authors in a table format, the setup and the logs of the flaky behavior:
+[Classification, Projects Setup and Flakiness Logs](PR_Classifications/README.md).
 
 - To automate the flaky test reproduction protocol, we provide a Python script detailed in [run_tests.py](tests_execution/run_tests.py). The script is used to run the analyzed test multiple times to observe intermittent failures and automatically generate the results logs available in our Google Drive Folders. This is the same tool we used to produce the analysis logs available on Google Drive and to gather the data for Table 1 in our paper.
