@@ -7,14 +7,44 @@ PR URL: https://github.com/holepunchto/bare-http1/pull/17
 ## Pull Request Code
 ![PR Code](image1.png)
 
-## Our Pattern Classification
-**Lifecycle Race:**
-The issue arises from an incorrect ordering between different phases of the request–response lifecycle in a Node.js HTTP server.
-Specifically, the server begins sending the response (`res.write` / `res.end`) before the request body has been fully received and processed (`req.on('end')`). Due to asynchronous scheduling (e.g., via `setImmediate`), the response completion may occur before the request stream finishes emitting all its data. This creates a race condition between the request consumption phase and the response finalization phase, which are both part of the server’s lifecycle management.
+## Description
+The issue arises from an incorrect ordering between different phases of the request–response process in a Node.js HTTP server. The server may begin sending the response (`res.write` / `res.end`) before the request body has been fully received and processed (`req.on('end')`). Due to asynchronous scheduling (via `setImmediate`), the response completion may occur before the request stream finishes emitting all its data. This creates a race condition between the request consumption phase and the response finalization phase, which are both part of the server’s management.
 
-## Wang Pattern Classification
-**Order Violation:**
-The root problem is that two logically dependent events: (1) the completion of request body processing and (2) the sending of the full response, are executed without enforcing the intended order between them. The correct behavior requires that the request be fully received and processed before the response is finalized. However, due to asynchronous execution and the use of setImmediate, the response completion can occur prematurely.
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the request body to be fully processed before the server finalized.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Lifecycle Race</td>
+      <td>Conflict between the logic of processing a large request body and a premature response finalization (teardown).</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The order expected by the dev is not followed.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Lifecycle Race</td>
+      <td>The lifecycle (protocol) expected by the dev is not followed due to a race condition.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Setup
 ```

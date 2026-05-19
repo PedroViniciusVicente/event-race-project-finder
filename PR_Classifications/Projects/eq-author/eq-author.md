@@ -9,16 +9,44 @@ PR URL: https://github.com/ONSdigital/eq-author-app/pull/100
 
 ![PR Code 2](image3.png)
 
-## Our Pattern Classification
-**Concurrent Access Race:**
-As described in the PR, when a user blurs a field (e.g., alias or title) and simultaneously triggers another UI action (such as adding a section introduction), two update operations are fired almost concurrently. Both updates attempt to modify the same underlying entity and are sent as separate requests.
+## Description
+As described in the PR, when a user blurs a field (alias or title) and simultaneously triggers another UI action, two update operations are fired almost concurrently. Both updates attempt to modify the same underlying entity and are sent as separate requests. With this behavior multiple asynchronous operations are accessing and modifying shared state without synchronization. The fix introduces a debouncing mechanism (`debounce(..., 20ms)`), which aggregates rapid successive updates into a single operation. By delaying execution and coalescing updates within a short time window, the solution prevents overlapping mutations and ensures that only a consolidated, consistent update is sent.
 
-This behavior reflects a classic concurrent access problem: multiple asynchronous operations accessing and modifying shared state without synchronization. The fix introduces a debouncing mechanism (`debounce(..., 20ms)`), which aggregates rapid successive updates into a single operation. By delaying execution and coalescing updates within a short time window, the solution prevents overlapping mutations and ensures that only a consolidated, consistent update is sent.
-
-## Wang Pattern Classification
-**Atomic Violation:**
-The intended behavior is that multiple logically related updates (e.g., modifying a field and creating a section introduction) should be treated as a single, coherent operation on the entity. However, in the original implementation, these updates are executed as separate asynchronous mutations, allowing them to interleave in time. As a result, one update may overwrite or conflict with the effects of another.
-This violates the expectation that the sequence of operations should behave atomically: as an indivisible unit without interference from other concurrent operations.
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the earlier asynchronous update to complete before the later one, therefore avoiding the non-deterministic behavior.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Concurrent Access Race</td>
+      <td>Two overlapping mutations compete to update the same entity without proper coordination.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>There are two updates (mutations, events) and they race with each other, causing the bug. I think it is not atomicity violation because there isn’t a third event that occurs between them.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Concurrent Access Race</td>
+      <td>Both events try to update the UI (same resource).</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Setup
 ```

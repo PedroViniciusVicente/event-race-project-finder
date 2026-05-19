@@ -7,15 +7,45 @@ PR URL: https://github.com/miguelcobain/ember-css-transitions/pull/114
 ## Pull Request Code
 ![PR Code](image1.png)
 
-## Our Pattern Classification
-**Stabilization Race:**
+## Description
 In this test, the code relies on `await waitFor('#my-element_clone.example-leave')` to ensure that a DOM element with a specific transition class is present. However, `waitFor` alone seems to not be sufficient to guarantee that the rendering and animation has completed. As noted in the PR, `waitFor` may resolve too late or at an inconsistent point in the rendering cycle, leading to false-negative failures.
-The fix introduces an additional synchronization step using `window.requestAnimationFrame`, which ensures that the browser has completed at least one rendering frame before proceeding. Furthermore, the conditional re-check with `waitFor` reinforces that the DOM has reached the expected state. This combination ensures that the UI has fully stabilized before assertions are made.
+The fix introduces an additional synchronization step using `window.requestAnimationFrame`, which ensures that the browser has completed at least one rendering frame before proceeding.
 
-## Wang Pattern Classification
-**Order Violation:**
-The core problem is that the test assumes a specific ordering between asynchronous events: (1) the triggering of a transition, (2) the DOM update reflecting the transition state, and (3) the execution of assertions. However, due to the asynchronous nature of rendering and animation scheduling (e.g., via `requestAnimationFrame`), this order is not reliably enforced.
-As a result, assertions may execute before the DOM has been updated to the expected state, violating the intended sequence of operations.
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the asynchronous UI animation to complete before the assertions.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>The test asserts before the UI component has stabilized and completed its rendering. The fix had to introduce an additional synchronization step to ensure the rendering frame before proceeding.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The wait may take too long and miss the element, violating the expected order.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>The timing between the rendering and assert is not right.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Setup
 ```

@@ -7,15 +7,46 @@ PR URL: https://github.com/muxinc/hls-video-element/pull/32
 ## Pull Request Code
 ![PR Code](image2.png)
 
-## Our Pattern Classification
-**Lifecycle Race:**
-The issue is related to the improper sequencing of operations during the lifecycle of a custom video element.
-When the `src` attribute changes, the `load()` method is triggered, which internally calls `#destroy()` to clean up any existing HLS instance before initializing a new one. However, without proper synchronization, the initialization logic may execute before all relevant attributes are fully applied to the element.
-The fix introduces an `await Promise.resolve()` to wait for one microtask tick in the `load()` method. This ensures that all pending attribute updates and lifecycle callbacks are completed before proceeding with the initialization of the HLS instance.
+![PR Code](image3.png)
 
-## Wang Pattern Classification
-**Order Violation:**
-The correct behavior requires a strict ordering: (1) all attribute updates (especially `src`) must be fully applied, (2) previous resources must be destroyed, and only then (3) a new HLS instance should be initialized. However, due to the asynchronous nature of attribute propagation and lifecycle callbacks, the initialization logic may run before the system has completed earlier steps.
+## Description
+In this case, when the `src` attribute changes, the `load()` method is triggered, which internally calls `#destroy()` to clean up any existing HLS instance before initializing a new one. However, without proper synchronization, the initialization logic may execute before all relevant attributes are fully applied to the element. The fix introduces an `await Promise.resolve()` to wait for one microtask tick in the `load()` method.
+
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the teardown of the previous HLS instance to complete before initializing the new one.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Lifecycle Race</td>
+      <td>The load method tries to initiate a new setup immediately after using #destroy to teardown old instances, but not ensuring the teardown is fully completed before the new initialization.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The expected order of setting attributes is violated.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Lifecycle Race</td>
+      <td>It involves lifecycle issues.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Setup
 ```

@@ -7,18 +7,15 @@ PR URL: https://github.com/cozy/cozy-drive/pull/2940
 ## Pull Request Code
 ![PR Code](image1.png)
 
-## Our Pattern Classification
-**Stabilization Race:**
+## Description
 In this test, the `FilesViewer` component triggers a `fetchMore` operation when additional files are needed. The mocked `fetchMore` function introduces an artificial delay (`sleep(10)`), simulating asynchronous data fetching. However, during this delay, the React component may undergo additional re-render cycles due to internal state updates or non-deterministic scheduling in the rendering process.
-
-As a result, the `fetchMore` function may be invoked more than once before the component stabilizes, leading to intermittent failures in the assertion `toHaveBeenCalledTimes(1)`, as shown in the log below. The test assumes a stable, single invocation, but does not adequately wait for the component’s state and side effects to settle. This aligns with the definition of a Stabilization Race, where the failure is caused by observing the system before all asynchronous effects and re-renders have completed.
+As a result, the `fetchMore` function may be invoked more than once, leading to intermittent failures in the assertion `toHaveBeenCalledTimes(1)`, as shown in the log below.
 
 ```
 yarn run v1.22.22
 $ env NODE_ENV='test' cozy-scripts test src/drive/web/modules/viewer/FilesViewer.spec.jsx
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 
-=== ERROS ===
 (node:14019) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 FAIL src/drive/web/modules/viewer/FilesViewer.spec.jsx
@@ -58,9 +55,42 @@ Ran all test suites matching /src\/drive\/web\/modules\/viewer\/FilesViewer.spec
 error Command failed with exit code 1.
 ```
 
-## Wang Pattern Classification
-**Order Violation:**
-The intended behavior assumes a specific ordering: the component should trigger `fetchMore` exactly once in response to its initial render and state conditions. However, due to asynchronous rendering and possible re-renders, additional invocations of `fetchMore` may occur before the system reaches a stable state. This indicates that the expected sequence of events: initial render -> single `fetchMore` call -> stable UI, is not being strictly enforced.
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the single “fetchMore” operation to happen after the non-deterministic re-render operation.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td><s>Stabilization Race</s><br><br><b>[After conflict resolution]</b><br>Lifecycle Race</td>
+      <td><s>The test asserts a “fetchMore” call count, but the system observed is not fully stable, so it does not guarantee a single “fetchMore” call due to eventual re-renders or internal updates that trigger redundant executions.</s><br><br> The test asserts a “fetchMore” call count, but fails to understand the component setup lifecycle that does not guarantee a single “fetchMore” call due to eventual re-renders or internal updates that trigger redundant executions.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The assert expects the function to be called once, but another call(s) may occur before, violating the expected order.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Lifecycle Races</td>
+      <td>It failed to take the lifecycle of the component into account.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Setup
 ```

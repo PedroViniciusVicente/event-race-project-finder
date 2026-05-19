@@ -8,10 +8,8 @@ PR URL: https://github.com/fastify/session/pull/242
 ![PR Code](image1.png)
 
 ## Our Pattern Classification
-Stabilization Race:
 
 ## Wang Pattern Classification
-Order Violation:
 
 ## Setup
 ```

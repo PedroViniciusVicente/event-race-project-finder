@@ -7,15 +7,48 @@ PR: https://github.com/skholkhojaev/milo/pull/1
 ## Pull Request Code
 ![PR Code](image2.png)
 
-## Our Pattern Classification
-Stabilization Race:
+## Description
+This test validates metrics related to LCP (Largest Contentful Paint), such as `lcpEl`, which depend on asynchronous browser rendering behavior and the timing of performance measurement collection. Originally, the test assumed a deterministic rendering outcome by asserting exact hardcoded values (an image path). However, the measured element could vary depending on timing and execution environment, leading to intermittent failures.
 
-## Wang Pattern Classification
-Order Violation:
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the asynchronous page rendering to complete and stabilize before the measurements were collected and asserted.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>Web Vitals’ Largest Contentful Paint (LCP) measurements are captured before the UI has fully rendered and stabilized.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The assertions assume that the visual component will be ready, but sometimes it is not. Violate the order expected by the dev.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>Use some resources before it is ready.</td>
+    </tr>
+  </tbody>
+</table>
 
-the PR above was merged into a test branch, the merge in the used branch (stage) was made here: https://github.com/skholkhojaev/milo/commit/b1351a6df6de10659dad4dba7bb4a9ade8e5b838
 
-
+<br><br>
+Obs: This PR was merged into a test branch, the merge in the used branch (stage) was made here: https://github.com/skholkhojaev/milo/commit/b1351a6df6de10659dad4dba7bb4a9ade8e5b838
 commit history: https://github.com/skholkhojaev/milo/commits/stage/?since=2025-01-13&until=2025-01-15
 
 

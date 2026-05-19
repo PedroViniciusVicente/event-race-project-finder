@@ -8,10 +8,8 @@ PR URL: https://github.com/tshino/vscode-vz-like-keymap/pull/227
 ![PR Code](image1.png)
 
 ## Our Pattern Classification
-Stabilization Race:
 
 ## Wang Pattern Classification
-Order Violation:
 
 ## Setup
 ```

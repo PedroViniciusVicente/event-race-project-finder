@@ -8,10 +8,8 @@ PR URL: https://github.com/docknetwork/sdk/pull/259
 ![PR Code](image2.png)
 
 ## Our Pattern Classification
-Stabilization Race:
 
 ## Wang Pattern Classification
-Order Violation:
 
 ## Setup
 ```

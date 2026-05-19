@@ -7,14 +7,44 @@ PR URL: https://github.com/FlowFuse/flowfuse/pull/4260
 ## Pull Request Code
 ![PR Code](image1.png)
 
-## Our Pattern Classification
-**Stabilization Race:**
-In this scenario, the test triggers the startup of multiple instances, including `app.containers.start(thirdInstance)` whose startup process is asynchronous. The test proceeds to validate the application state and completes without awaiting the full stabilization and resolution of this asynchronous operation.
+## Description
+In this scenario, the test triggers the startup of multiple instances, including `app.containers.start(thirdInstance)` whose startup process is asynchronous. The test proceeds to validate the application state and completes without awaiting the full resolution of this asynchronous operation.
 
-## Wang Pattern Classification
-**Order Violation:**
-The intended execution order is that the asynchronous startup operations, particularly the initialization of the third instance, should complete before the test finishes. However, in the original code, the test does not enforce this ordering and allows completion to occur before the `startThirdResult.started` promise resolves.
-This leads to a situation where operations that are logically expected to occur earlier (full initialization of the instance) are not guaranteed to complete before later events (test termination). The fix enforces the correct sequencing by explicitly awaiting the completion of the startup process.
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the third instance’s asynchronous startup to complete before the test conclusion.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>The test terminates immediately after the assertions without waiting for the third instance to completely start and stabilize.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The dev intended order is violated.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>The code should wait for the resource to be started.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Setup
 ```

@@ -7,11 +7,44 @@ PR URL: https://github.com/pinojs/pino/pull/1186
 ## Pull Request Code
 ![PR Code](image2.png)
 
-## Our Pattern Classification
-Stabilization Race:
+## Description
+In the original test, the transport instance is created and used (`instance.info('hello')`) without ensuring that it has fully completed its initialization phase. Since transport setup (including worker initialization and event binding) is asynchronous, there exists a race condition between the transport becoming ready and the test invoking operations on it. The fix introduces `await once(transport, 'ready')`.
 
-## Wang Pattern Classification
-Order Violation:
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the asynchronous resource teardown to be completed before the new instance initialization.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Lifecycle Race</td>
+      <td>The asynchronous transport teardown might not complete before the new instance initialization, requiring explicit synchronization with ‘ready’ to ensure the correct instance initialization.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The object is used before the event ‘ready’ is emitted.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Lifecycle Race</td>
+      <td>The order of events in the object is not respected.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Setup
 ```

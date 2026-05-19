@@ -7,17 +7,44 @@ PR URL: https://github.com/BrightspaceUI/core/pull/1120
 ## Pull Request Code
 ![PR Code](image1.png)
 
-## Our Pattern Classification
-**Stabilization Race:**
-The flakiness arises from insufficient time being allowed for the system state to stabilize before executing dependent logic.
+## Description
+In this case, the test updates the timezone configuration (`documentLocaleSettings.timezone.identifier`) and immediately invokes the function `getShiftedEndDateTime`, which relies on this updated timezone to compute correct results. Although the assignment itself is synchronous, its propagation, likely through the underlying UI framework, occurs asynchronously. As a result, the system may not yet reflect the updated timezone when the function is executed, leading to intermittent test failures. The absence of an explicit event or callback signaling that the timezone change has been fully applied creates this issue. The introduced fix (`await aTimeout(10)`) artificially delays execution, allowing enough time for the asynchronous propagation of the timezone change to complete.
 
-In this case, the test updates the timezone configuration (`documentLocaleSettings.timezone.identifier`) and immediately invokes the function `getShiftedEndDateTime`, which relies on this updated timezone to compute correct results. Although the assignment itself is synchronous, its propagation, likely through the underlying UI framework (e.g., Lit), occurs asynchronously. As a result, the system may not yet reflect the updated timezone when the function is executed, leading to intermittent test failures.
-
-The absence of an explicit event or callback signaling that the timezone change has been fully applied exacerbates this issue. The introduced fix (`await aTimeout(10)`) artificially delays execution, allowing enough time for the asynchronous propagation of the timezone change to complete. This ensures that the system reaches a stable and consistent state before the test logic runs, which is the defining characteristic of a Stabilization Race.
-
-## Wang Pattern Classification
-**Order Violation:**
-The core problem lies in the lack of enforced ordering between two dependent operations: (1) updating the timezone configuration and (2) executing a function that depends on that configuration. The intended behavior requires that the timezone update be fully applied and observable before the function is called. However, due to asynchronous propagation, the function may execute before the update has taken effect.
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the timezone to be fully propagated before the date calculation.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>The test triggers a timezone update but immediately performs a date calculation before the framework’s internal asynchronous update has stabilized.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The order expected by the dev is violated.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>Assert some resources (timezone definition) before it is ready.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Setup
 ```

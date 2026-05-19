@@ -7,15 +7,44 @@ PR URL: https://github.com/goodeggs/express-promise-middleware/pull/2/files
 ## Pull Request Code
 ![PR Code](image1.png)
 
-## Our Pattern Classification
-**Stabilization Race:**
-In the original implementation, the middleware checks the flag `res.finished` to determine whether a response has already been completed. However, sending a response (e.g., via `res.send`) is an asynchronous operation, and there exists a time window where the response has already been initiated but not yet fully completed. During this window, `res.finished` remains false, even though the response is in progress.
+## Description
+In the original implementation, the middleware checks the flag `res.finished` to determine whether a response has already been completed. However, sending a response (e.g., via `res.send`) is an asynchronous operation, and there exists a time window where the response has already been initiated but not yet fully completed. During this window, `res.finished` remains false, even though the response is in progress. The fix replaces `res.finished` with `res.headersSent`, which is set at the moment the response is initiated.
 
-The fix replaces `res.finished` with `res.headersSent`, which is set at the moment the response is initiated. This ensures that the middleware observes a stable and accurate state when making decisions, eliminating the timing window that caused the race.
-
-## Wang Pattern Classification
-**Order Violation:**
-The intended ordering is that once a response is initiated, the middleware should not proceed to call `next()`. However, due to the asynchronous nature of response completion and the delayed update of `res.finished`, the middleware’s check may occur before the system reflects that the response has already started. The fix ensures that the correct ordering is respected by using `res.headersSent`, which reflects the initiation of the response immediately.
+## Validation Between the Authors
+ <table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended order was for the response to always finish before the middleware’s check and forced next() call.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>The test expects the middleware’s response to have finished as soon as the response is sent, leaving little time for the asynchronous response to fully stabilize, which can lead to premature and erroneous calls to next().</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The order expected by the dev is violated.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>Use some resources (boolean variable) before it is ready (it races before the variable is updated).</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Setup

@@ -7,15 +7,46 @@ PR: https://github.com/magento/pwa-studio/pull/743
 ## Pull Request Code
 ![PR Code](image2.png)
 
-## Our Pattern Classification
-**Stabilization Race:**
-In the original test, the use of `await wait()` (from the `waait` library) effectively introduces a minimal delay (similar to `setTimeout(0)`), allowing only a single event loop tick before proceeding. However, this approach does not guarantee that all asynchronous rendering and data-fetching operations, especially those involving React have completed.
+## Description
+In the original test, the use of `await wait()` (from the `waait` library) introduces a minimal delay (similar to `setTimeout(0)`), allowing only a single event loop tick before proceeding. However, this approach does not guarantee that all asynchronous rendering and data-fetching operations, especially those involving React have completed. As a result, the test may execute assertions (checking the number of `CategoryTile` components) before the component has finished rendering, leading to flaky outcomes. The fix replaces this approach with `wait-for-expect`, which repeatedly evaluates the assertion until it passes or a timeout is reached.
 
-As a result, the test may execute assertions (e.g., checking the number of `CategoryTile` components) before the component has finished rendering, leading to flaky outcomes. The fix replaces this approach with `wait-for-expect`, which repeatedly evaluates the assertion until it passes or a timeout is reached. This ensures that the component has reached a stable state before validation occurs.
+## Validation Between the Authors
+<table>
+  <thead>
+    <tr>
+      <th align="left">Researcher</th>
+      <th align="left">Classification</th>
+      <th align="left">Bug Pattern</th>
+      <th align="left">Rationale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>R1</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The intended ordering was for the component rendering and fetching to be completed before the assertions on the output.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>The delay introduced by “await wait()” was insufficient to ensure that the component’s asynchronous rendering and fetching have fully stabilized before assertions.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>R2</b></td>
+      <td>Wang</td>
+      <td>Order Violation</td>
+      <td>The dev intended order is the component be rendered before asserting.</td>
+    </tr>
+    <tr>
+      <td>Our</td>
+      <td>Stabilization Race</td>
+      <td>Use some resource before it is ready.</td>
+    </tr>
+  </tbody>
+</table>
 
-## Wang Pattern Classification
-**Order Violation:**
-The intended sequence of events is: (1) initiate component rendering and data fetching, (2) complete all asynchronous updates, and (3) perform assertions on the final rendered output. However, the original implementation does not enforce this ordering, as the test proceeds after an arbitrary and insufficient delay.
+
 
 ## Setup Projeto
 ```
